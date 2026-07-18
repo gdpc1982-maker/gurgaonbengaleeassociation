@@ -242,6 +242,22 @@ img{
 
 }
 
+.navbar-toggler{
+
+    margin:12px auto;
+
+    border:none;
+
+    background:var(--primary);
+
+}
+
+.navbar-toggler-icon{
+
+    filter:invert(1);
+
+}
+
 .navbar-nav{
 
     width:100%;
@@ -364,6 +380,116 @@ img{
 }
 
 }
+/* ===================================================== */
+/* PAGE HERO (used on About page, above content sections) */
+/* ===================================================== */
+
+.page-hero{
+
+    background:linear-gradient(135deg,var(--primary),var(--accent));
+
+    color:#fff;
+
+    padding:70px 0;
+
+}
+
+.page-hero p{
+
+    color:rgba(255,255,255,.85);
+
+}
+
+/* ===================================================== */
+/* PAGE BANNER (simple page title banner used on inner pages) */
+/* ===================================================== */
+
+.page-banner{
+
+    background:linear-gradient(135deg,var(--primary),var(--accent));
+
+    color:#fff;
+
+    text-align:center;
+
+    padding:80px 20px;
+
+}
+
+.page-banner h1{
+
+    font-family:var(--heading);
+
+    font-weight:700;
+
+    margin-bottom:10px;
+
+}
+
+.page-banner p{
+
+    color:var(--secondary);
+
+    font-weight:500;
+
+}
+
+/* ===================================================== */
+/* COMMITTEE GRID */
+/* ===================================================== */
+
+.content{
+
+    max-width:1100px;
+
+    margin:0 auto;
+
+    padding:0 20px;
+
+}
+
+.committee-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+    gap:25px;
+
+    margin:35px 0 55px;
+
+}
+
+.member{
+
+    background:#fff;
+
+    border-radius:16px;
+
+    padding:30px 20px;
+
+    text-align:center;
+
+    box-shadow:0 12px 35px rgba(0,0,0,.08);
+
+}
+
+.member h3{
+
+    color:var(--primary);
+
+    font-family:var(--heading);
+
+    margin-bottom:10px;
+
+}
+
+.member p{
+
+    color:var(--gray);
+
+}
+
 /* ===================================================== */
 /* HERO */
 /* ===================================================== */
