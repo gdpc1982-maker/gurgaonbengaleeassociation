@@ -1,0 +1,605 @@
+/* =====================================================
+   Gurgaon Bengalee Association Website
+   Main Stylesheet
+   Version 2.0
+===================================================== */
+
+:root{
+
+    --primary:#8B1E5A;
+    --secondary:#D4AF37;
+    --accent:#5C1738;
+
+    --dark:#222222;
+    --light:#FAF8F3;
+    --white:#ffffff;
+    --gray:#666666;
+
+    --heading:'Poppins',sans-serif;
+    --body:'Inter',sans-serif;
+    --bengali:'Noto Sans Bengali',sans-serif;
+
+}
+
+/* ===================================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:var(--body);
+
+    color:var(--dark);
+
+    background:var(--light);
+
+    line-height:1.8;
+
+    overflow-x:hidden;
+
+}
+
+/* ===================================================== */
+
+a{
+
+    text-decoration:none;
+
+    transition:.35s;
+
+}
+
+img{
+
+    max-width:100%;
+
+    display:block;
+
+}
+
+/* ===================================================== */
+/* TOP BAR */
+/* ===================================================== */
+
+.topbar{
+
+    background:var(--primary);
+
+    color:#fff;
+
+    padding:12px 0;
+
+    font-size:14px;
+
+    letter-spacing:.5px;
+
+    font-weight:500;
+
+}
+
+/* ===================================================== */
+/* HEADER */
+/* ===================================================== */
+
+.site-header{
+
+    background:#ffffff;
+
+    position:sticky;
+
+    top:0;
+
+    z-index:9999;
+
+    box-shadow:0 3px 15px rgba(0,0,0,.08);
+
+}
+
+/* Logo + GBA Banner */
+
+.branding{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:25px;
+
+    padding:15px 25px;
+
+    background:#ffffff;
+
+    flex-wrap:wrap;
+
+}
+
+.logo{
+
+    width:90px;
+
+    height:auto;
+
+}
+
+.gba-banner{
+
+    width:100%;
+
+    max-width:650px;
+
+    height:auto;
+
+}
+
+/* Navigation */
+
+.navbar{
+
+    background:var(--primary);
+
+    padding:0;
+
+}
+
+.navbar-nav{
+
+    width:100%;
+
+    justify-content:center;
+
+}
+
+.navbar-nav .nav-link{
+
+    color:#ffffff;
+
+    font-weight:600;
+
+    padding:18px 18px;
+
+    text-transform:uppercase;
+
+    font-size:14px;
+
+    letter-spacing:.6px;
+
+}
+
+.navbar-nav .nav-link:hover{
+
+    background:var(--secondary);
+
+    color:#000;
+
+}
+
+.navbar-nav .nav-link.active{
+
+    background:var(--secondary);
+
+    color:#000;
+
+}
+
+/* Mobile */
+
+@media (max-width:992px){
+
+.branding{
+
+    flex-direction:column;
+
+    gap:15px;
+
+}
+
+.logo{
+
+    width:75px;
+
+}
+
+.gba-banner{
+
+    max-width:95%;
+
+}
+
+.navbar-nav{
+
+    text-align:center;
+
+}
+
+.navbar-nav .nav-link{
+
+    padding:15px;
+
+}
+
+}
+
+/* Navigation Menu */
+
+.nav-menu{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    list-style:none;
+    margin:0;
+    padding:0;
+    gap:0;
+}
+
+.nav-menu li{
+    margin:0;
+}
+
+.nav-menu a{
+    display:block;
+    padding:18px 24px;
+    color:#fff;
+    text-decoration:none;
+    font-weight:600;
+    text-transform:uppercase;
+    transition:.3s;
+}
+
+.nav-menu a:hover,
+.nav-menu a.active{
+    background:var(--secondary);
+    color:#000;
+}
+
+@media(max-width:768px){
+
+.nav-menu{
+    flex-direction:column;
+}
+
+.nav-menu a{
+    width:100%;
+    text-align:center;
+}
+
+}
+/* ===================================================== */
+/* HERO */
+/* ===================================================== */
+
+.hero{
+
+    position:relative;
+
+    min-height:90vh;
+
+    display:flex;
+
+    align-items:center;
+
+    background:url("../images/hero.jpg");
+
+    background-size:cover;
+
+    background-position:center;
+
+}
+
+.hero-overlay{
+
+    width:100%;
+
+    height:100%;
+
+    background:linear-gradient(rgba(0,0,0,.55),
+    rgba(0,0,0,.65));
+
+    padding:120px 0;
+
+}
+
+.hero-year{
+
+    display:inline-block;
+
+    background:var(--secondary);
+
+    color:#000;
+
+    padding:8px 18px;
+
+    border-radius:50px;
+
+    font-weight:700;
+
+    margin-bottom:25px;
+
+}
+
+.hero h1{
+
+    font-family:var(--heading);
+
+    color:#fff;
+
+    font-size:62px;
+
+    line-height:1.1;
+
+    font-weight:700;
+
+}
+
+.hero h2{
+
+    color:var(--secondary);
+
+    margin-top:12px;
+
+    font-size:34px;
+
+    font-weight:600;
+
+}
+
+.hero p{
+
+    color:#fff;
+
+    margin-top:30px;
+
+    max-width:650px;
+
+    font-size:18px;
+
+}
+
+.hero .btn{
+
+    padding:14px 30px;
+
+    border-radius:50px;
+
+    font-weight:600;
+
+}
+
+.btn-warning{
+
+    background:var(--secondary);
+
+    border:none;
+
+}
+
+.btn-warning:hover{
+
+    background:#c49d28;
+
+}
+
+.hero-motto{
+
+    color:#fff;
+
+    font-size:17px;
+
+    font-weight:500;
+
+    letter-spacing:.5px;
+
+}
+
+/* ===================================================== */
+/* SECTION */
+/* ===================================================== */
+
+section{
+
+    padding:90px 0;
+
+}
+
+.section-title{
+
+    font-family:var(--heading);
+
+    font-size:42px;
+
+    color:var(--primary);
+
+    font-weight:700;
+
+    margin-bottom:25px;
+
+    position:relative;
+
+}
+
+.section-title::after{
+
+    content:"";
+
+    display:block;
+
+    width:90px;
+
+    height:4px;
+
+    background:var(--secondary);
+
+    margin-top:15px;
+
+    border-radius:10px;
+
+}
+
+/* ===================================================== */
+/* CARDS */
+/* ===================================================== */
+
+.card{
+
+    border:none;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    transition:.35s;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+
+}
+
+.card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 25px 60px rgba(0,0,0,.15);
+
+}
+
+/* ===================================================== */
+/* BUTTONS */
+/* ===================================================== */
+
+.btn-primary{
+
+    background:var(--primary);
+
+    border:none;
+
+}
+
+.btn-primary:hover{
+
+    background:var(--accent);
+
+}
+
+/* ===================================================== */
+/* FOOTER */
+/* ===================================================== */
+
+footer{
+
+    background:#2b2030;
+
+    color:#fff;
+
+    padding:70px 0 30px;
+
+}
+
+footer h4{
+
+    color:var(--secondary);
+
+    margin-bottom:20px;
+
+}
+
+footer a{
+
+    color:#ddd;
+
+}
+
+footer a:hover{
+
+    color:#fff;
+
+}
+
+.footer-bottom{
+
+    border-top:1px solid rgba(255,255,255,.15);
+
+    margin-top:40px;
+
+    padding-top:20px;
+
+    text-align:center;
+
+    font-size:14px;
+
+}
+
+/* ===================================================== */
+/* UTILITIES */
+/* ===================================================== */
+
+.shadow-soft{
+
+    box-shadow:0 20px 50px rgba(0,0,0,.08);
+
+}
+
+.rounded-xl{
+
+    border-radius:24px;
+
+}
+
+.text-primary-custom{
+
+    color:var(--primary);
+
+}
+
+.bg-primary-custom{
+
+    background:var(--primary);
+
+}
+
+.bg-light-custom{
+
+    background:var(--light);
+
+}
+
+/* ===================================================== */
+/* ANIMATIONS */
+/* ===================================================== */
+
+.hero h1,
+.hero h2,
+.hero p,
+.hero .btn,
+.hero-motto{
+
+    animation:fadeUp 1s ease;
+
+}
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(30px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
