@@ -3,7 +3,98 @@
    Main Stylesheet
    Version 2.0
 ===================================================== */
+.about-content p{
 
+    text-align:justify;
+
+    margin-bottom:20px;
+
+    font-size:1.08rem;
+
+    line-height:1.9;
+
+}
+.artwork-card{
+
+    background:#fff;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    box-shadow:0 12px 35px rgba(0,0,0,.08);
+
+    margin-bottom:40px;
+
+}
+
+/* Mobile Navigation */
+
+@media (max-width: 991px){
+
+    .navbar-collapse{
+
+        background:#ffffff;
+
+        padding:15px;
+
+        border-radius:10px;
+
+        margin-top:10px;
+
+        box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+    }
+
+    .navbar-nav{
+
+        text-align:center;
+
+    }
+
+    .navbar-nav .nav-item{
+
+        margin:8px 0;
+
+    }
+
+}
+
+.artwork-card img{
+
+    width:100%;
+
+    aspect-ratio:1/1;
+
+    object-fit:cover;
+
+    display:block;
+
+}
+
+.image-credit{
+
+    padding:18px;
+
+    text-align:center;
+
+}
+
+.image-credit h4{
+
+    color:var(--primary);
+
+    margin-bottom:8px;
+
+}
+
+.image-credit p{
+
+    margin:0;
+
+    color:#666;
+
+}
 :root{
 
     --primary:#8B1E5A;
